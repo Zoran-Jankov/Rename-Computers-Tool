@@ -3,7 +3,7 @@ $Credential = Get-Credential
 $CSVFile = $null
 
 Add-Type -AssemblyName System.Windows.Forms
-Add-Type -AssemblyNamePresentationFramework
+Add-Type -AssemblyName PresentationFramework
 [System.Windows.Forms.Application]::EnableVisualStyles()
 
 $RenameComputersForm             = New-Object system.Windows.Forms.Form

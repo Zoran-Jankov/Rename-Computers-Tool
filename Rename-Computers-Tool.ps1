@@ -104,7 +104,7 @@ $SingleRenameButton.Add_Click({
     }
     catch {
         $Message ="Faild to rename $OldName computer `n" + $_.Exception
-        continue
+        break
     }
     $Message = "Successfully renamed " + $OldName + " computer to " + $NewName
     Write-Log -Message $Message

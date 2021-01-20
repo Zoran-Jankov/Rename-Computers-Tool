@@ -1,3 +1,16 @@
+<#
+.SYNOPSIS
+PowerShell Tool for renaming network computers with graphical user interface.
+
+.DESCRIPTION
+PowerShell Tool for renaming network computers with graphical user interface that can be used to rename single computer or to
+perform bulk rename drawing data from a `.csv` file. The `.csv` file must have OldName and NewName columns for tool to work.
+
+.NOTES
+Version:        1.0
+Author:         Zoran Jankov
+#>
+
 Import-Module "$PSScriptRoot\Modules\Write-Log.psm1"
 $Credential = Get-Credential
 $CSVFile = $null

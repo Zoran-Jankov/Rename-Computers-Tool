@@ -11,6 +11,8 @@
 PowerShell Tool for renaming network computers with graphical user interface that can be used to rename single computer or to
 perform bulk rename drawing data from a `.csv` file. The `.csv` file must have OldName and NewName columns for tool to work.
 
+![Application Window](https://raw.githubusercontent.com/Zoran-Jankov/Rename-Computers-Tool/main/Application%20Window.png)
+
 ## Credits
 
 ### Author

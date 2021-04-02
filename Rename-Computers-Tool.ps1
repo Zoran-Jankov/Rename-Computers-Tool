@@ -103,53 +103,54 @@ $MainForm.ShowIcon               = $false
 $MainForm.StartPosition          = [System.Windows.Forms.FormStartPosition]::CenterScreen
 $MainForm.ForeColor              = "#FFFFFF"
 $MainForm.BackColor              = "#1167B1"
-$MainForm.Font                   = New-Object System.Drawing.Font(
-    'Microsoft Sans Serif',11)
+$MainForm.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',11)
 
 $SingleRenameLabel               = New-Object system.Windows.Forms.Label
 $SingleRenameLabel.Text          = "Single Rename"
 $SingleRenameLabel.AutoSize      = $false
 $SingleRenameLabel.Width         = 670
-$SingleRenameLabel.Height        = 35
+$SingleRenameLabel.Height        = 40
 $SingleRenameLabel.Location      = New-Object System.Drawing.Point(0,0)
-$SingleRenameLabel.Font                   = New-Object System.Drawing.Font(
-    'Microsoft Sans Serif',15)
-$SingleRenameLabel.TextAlign = "MiddleCenter"
-$SingleRenameLabel.BackColor = "#3D3D3D"
+$SingleRenameLabel.Font          = New-Object System.Drawing.Font('Microsoft Sans Serif',15)
+$SingleRenameLabel.TextAlign     = "MiddleCenter"
+$SingleRenameLabel.BackColor     = "#3D3D3D"
 
 $BulkRenameLabel                 = New-Object system.Windows.Forms.Label
 $BulkRenameLabel.Text            = "Bulk Rename"
-$BulkRenameLabel.AutoSize        = $true
+$BulkRenameLabel.AutoSize        = $false
 $BulkRenameLabel.Width           = 25
 $BulkRenameLabel.Height          = 10
 $BulkRenameLabel.Location        = New-Object System.Drawing.Point(285,165)
 
 $ComputerNameLabel               = New-Object system.Windows.Forms.Label
-$ComputerNameLabel.Text          = "Computer"
-$ComputerNameLabel.AutoSize      = $true
-$ComputerNameLabel.Width         = 25
-$ComputerNameLabel.Height        = 10
-$ComputerNameLabel.Location      = New-Object System.Drawing.Point(25,70)
-
-$NewNameLabel                    = New-Object system.Windows.Forms.Label
-$NewNameLabel.Text               = "New Name"
-$NewNameLabel.AutoSize           = $true
-$NewNameLabel.Width              = 25
-$NewNameLabel.Height             = 10
-$NewNameLabel.Location           = New-Object System.Drawing.Point(25,110)
+$ComputerNameLabel.Text          = "   Computer"
+$ComputerNameLabel.AutoSize      = $false
+$ComputerNameLabel.Width         = 100
+$ComputerNameLabel.Height        = 25
+$ComputerNameLabel.Location      = New-Object System.Drawing.Point(0,60)
+$ComputerNameLabel.TextAlign     = "MiddleLeft"
+$ComputerNameLabel.BackColor     = "#3D3D3D"
 
 $ComputerNameComboBox            = New-Object system.Windows.Forms.ComboBox
 $ComputerNameComboBox.Width      = 380
-$ComputerNameComboBox.Height     = 25
-$ComputerNameComboBox.Location   = New-Object System.Drawing.Point(115,65)
+$ComputerNameComboBox.Location   = New-Object System.Drawing.Point(100,60)
 $ComputerNameComboBox.AutoCompleteMode = 'SuggestAppend'
 $ComputerNameComboBox.AutoCompleteSource = 'ListItems'
+
+$NewNameLabel                    = New-Object system.Windows.Forms.Label
+$NewNameLabel.Text               = "   New Name"
+$NewNameLabel.AutoSize           = $false
+$NewNameLabel.Width              = 100
+$NewNameLabel.Height             = 25
+$NewNameLabel.Location           = New-Object System.Drawing.Point(0,95)
+$NewNameLabel.TextAlign     = "MiddleLeft"
+$NewNameLabel.BackColor     = "#3D3D3D"
 
 $NewNameTextBox                  = New-Object system.Windows.Forms.TextBox
 $NewNameTextBox.Multiline        = $false
 $NewNameTextBox.Width            = 380
 $NewNameTextBox.Height           = 25
-$NewNameTextBox.Location         = New-Object System.Drawing.Point(115,105)
+$NewNameTextBox.Location         = New-Object System.Drawing.Point(110,116)
 $NewNameTextBox.MaxLength        = 15
 
 $CSVFileLabel                    = New-Object system.Windows.Forms.Label
@@ -171,7 +172,8 @@ $SelectFileButton.Text          = "Select File"
 $SelectFileButton.Width         = 120
 $SelectFileButton.Height        = 30
 $SelectFileButton.Location      = New-Object System.Drawing.Point(525,200)
-$SelectFileButton.BackColor = "#3D3D3D"
+$SelectFileButton.BackColor = "#FFFFFF"
+$SelectFileButton.ForeColor = "#000000"
 
 $SingleRenameButton              = New-Object system.Windows.Forms.Button
 $SingleRenameButton.Text         = "Rename"
